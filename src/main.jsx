@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import AppRoutes from './AppRoutes'
 import './index.css'
+import LoginContextProvider from './Context/ContextLogin'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <LoginContextProvider>
+        <AppRoutes />
+    </LoginContextProvider>
   </React.StrictMode>,
 )
