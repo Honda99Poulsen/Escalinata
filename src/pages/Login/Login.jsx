@@ -6,11 +6,9 @@ import Container from "../../Componentes/Container/Container"
 const Seccion = styled.section`
     background-color: #fff;
     width: 80%;
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 const Login = () => {
