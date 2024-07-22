@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import Editar from './Editar.png'
+import Eliminar from './Eliminar.png'
 
 const Div = styled.div`
     width: 100%;
@@ -24,10 +26,10 @@ const Opciones = () => {
     return (
         <Div>
             <div>
-                <Boton><Icono src="./Editar.png" alt="editar" />EDITAR</Boton>
+                <Boton><Icono src={Editar} alt="editar" />EDITAR</Boton>
             </div>
             <div>
-                <Boton><Icono src="./Eliminar.png" alt="eliminar" />ELIMINAR</Boton>
+                <Boton><Icono src={Eliminar} alt="eliminar" />ELIMINAR</Boton>
             </div>
         </Div>
     )
