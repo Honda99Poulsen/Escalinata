@@ -24,10 +24,10 @@ const Opciones = () => {
     return (
         <Div>
             <div>
-                <Boton><Icono src="../../../../public/img/Editar.png" alt="editar" />EDITAR</Boton>
+                <Boton><Icono src="./Editar.png" alt="editar" />EDITAR</Boton>
             </div>
             <div>
-                <Boton><Icono src="public/img/Eliminar.png" alt="eliminar" />ELIMINAR</Boton>
+                <Boton><Icono src="./Eliminar.png" alt="eliminar" />ELIMINAR</Boton>
             </div>
         </Div>
     )
