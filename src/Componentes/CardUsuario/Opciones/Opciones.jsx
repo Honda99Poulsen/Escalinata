@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Editar from './Editar.png'
-import Eliminar from './Eliminar.png'
+import { CiEdit } from "react-icons/ci";
+import { MdDeleteOutline } from "react-icons/md";
 
 const Div = styled.div`
     width: 100%;
@@ -18,18 +18,15 @@ const Boton = styled.button`
     font-family: 'Montserrat';
 `
 
-const Icono = styled.img`
-    width: 10px;
-`
-
 const Opciones = () => {
+
     return (
         <Div>
             <div>
-                <Boton><Icono src={Editar} alt="editar" />EDITAR</Boton>
+                <Boton><CiEdit />EDITAR</Boton>
             </div>
             <div>
-                <Boton><Icono src={Eliminar} alt="eliminar" />ELIMINAR</Boton>
+                <Boton><MdDeleteOutline />ELIMINAR</Boton>
             </div>
         </Div>
     )

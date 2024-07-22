@@ -30,6 +30,9 @@ const Texto = styled.span`
     font-weight: 800;
     font-size: 16px;
 `
+const TextoLlave = styled(Texto)`
+  font-weight: 400;
+`
 
 const CardUsuario = ({ usuario, llave, img }) => {
   return (
@@ -40,7 +43,7 @@ const CardUsuario = ({ usuario, llave, img }) => {
       <Opciones/>
       <DivInfo>
         <Texto>{usuario}</Texto>
-        <Texto>{llave}</Texto>
+        <TextoLlave>{llave}</TextoLlave>
       </DivInfo>
     </Div>
   );
