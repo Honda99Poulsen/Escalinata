@@ -11,6 +11,7 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "IBM Plex Mono", monospace;
 `
 const Resumen = styled.h1`
     font-family: "IBM Plex Mono";
@@ -33,7 +34,6 @@ const ContenedorNumeros = styled.div`
     flex-direction: column;
     align-items: center;
 `
-
 
 const ContenidoPrincipal = () => {
     return (

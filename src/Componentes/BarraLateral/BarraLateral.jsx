@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import LinkNav from "../LinkNav"
 
 const BarraLateralIzquiera = styled.aside`
     display: flex;
@@ -44,10 +45,13 @@ const Lista = styled.li`
     text-align: center;
 `
 const H2_Saludo = styled.h2`
+    font-family: "Pacifico", 'Courier New', Courier, monospace;
     color: #3441BE;
     font-size: 20px;
     font-weight: 400;
     line-height: 35.12px;
+    padding-bottom: 20px;
+    
 `
 
 const BarraLateral = () => {
@@ -57,7 +61,7 @@ const BarraLateral = () => {
                 <H2>DASHBOARD</H2>
             </Con>
             <Ul>
-                <Lista>Gestion de Usuario</Lista>
+                <LinkNav to='/gestion-de-usuario'>Gestion de Usuario</LinkNav>
                 <Lista>Gestion de Inventario</Lista>
                 <Lista>Control de Ventas</Lista>
                 <Lista>Gestion de Citas</Lista>

@@ -9,12 +9,16 @@ const Div = styled.div`
     display: flex;
     align-items: center;
     padding-left: 86px;
+    width: 100%;
+    box-sizing: border-box;
 `
 const Titulo = styled.h2`
     color: #000;
+    font-family: "Pacifico";
+    font-weight: 400;
 `
 
-const Bienvenido = () => {
+const Bienvenido = ({titulo}) => {
 
     const {login} = useContext(LoginContext)
 
@@ -22,7 +26,7 @@ const Bienvenido = () => {
 
     return (
         <Div>
-            <Titulo>BIENVENIDO, {loginConver}</Titulo>
+            <Titulo>{titulo ? titulo : `BIENVENIDO, ${loginConver}`}</Titulo>
         </Div>
     )
 }
